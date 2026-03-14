@@ -68,14 +68,24 @@ h6 {
 }
 /* CSS reset end */
 
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  width: 100vw;
+  max-width: 1300px;
   height: 100vh;
   display: flex;
+  box-shadow: 2px 0px 10px grey;
 }
 
 .background-image-container {
-  width: 500px;
+  width: 400px;
   height: 100%;
   background-image: url(img/rickshaw.jpg);
   background-position: right;
@@ -88,7 +98,7 @@ h6 {
 
 .banner {
   font-family: "UniqueRegular", serif;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(18, 22, 18, 0.3);
   color: white;
   font-size: 100px;
   display: flex;
@@ -101,9 +111,75 @@ h6 {
   bottom: 10px;
   color: white;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .picture-credit a {
   color: white;
+}
+
+.form-container {
+  background-color: rgb(243, 242, 239);
+}
+
+.about {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 50px 32px;
+}
+
+.about p {
+  margin-top: 16px;
+  max-width: 55ch;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.main-input {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0px 10px grey;
+  padding: 16px 75px;
+  height: 275px;
+  background-color: white;
+}
+
+.main-input > p {
+  font-size: 1.5em;
+  color: rgb(12, 12, 12);
+}
+
+.input-line {
+  display: flex;
+  margin-top: 8px;
+  justify-content: flex-start;
+  font-family: monospace;
+  font-size: 16px;
+  gap: 32px;
+}
+
+label {
+  display: block;
+}
+
+.btn {
+  background-color: rgb(48, 95, 62);
+  color: white;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 10px;
+  margin: 50px 0 0 32px;
+  box-shadow: 2px 2px 7px grey;
+}
+
+.login {
+  margin: 32px 0 0 32px;
+}
+
+.login a {
+  color: rgb(48, 95, 62);
+  font-weight: bold;
+  text-decoration: none;
 }

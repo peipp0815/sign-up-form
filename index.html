@@ -35,8 +35,8 @@
         <div class="about">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>fast</em> to get started.
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>fast</em> to get started.
           </p>
           <p>You <em>know</em> you want to.</p>
         </div>
@@ -44,36 +44,44 @@
           <form action="" method="get">
             <section class="main-input">
               <p>Let's do this!</p>
-              <p>
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" />
-              </p>
-              <p>
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" />
-              </p>
-              <p>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-              </p>
-              <p>
-                <label for="number">PHONE NUMBER</label>
-                <input type="tel" name="number" id="number" />
-              </p>
-              <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
-              </p>
-              <p>
-                <label for="conf_password">CONFIRM PASSWORD</label>
-                <input
-                  type="password"
-                  name="conf_password"
-                  id="conf_password"
-                />
-              </p>
+              <div class="input-line">
+                <p>
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" name="first_name" id="first_name" />
+                </p>
+                <p>
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" name="last_name" id="last_name" />
+                </p>
+              </div>
+              <div class="input-line">
+                <p>
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                  <label for="number">PHONE NUMBER</label>
+                  <input type="tel" name="number" id="number" />
+                </p>
+              </div>
+              <div class="input-line">
+                <p>
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" />
+                </p>
+                <p>
+                  <label for="conf_password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="conf_password"
+                    id="conf_password"
+                  />
+                </p>
+              </div>
             </section>
-            <section class="button"></section>
+            <section class="submit-btn">
+              <button type="submit" class="btn">Create Account</button>
+            </section>
           </form>
         </div>
         <div class="login">Already have an account? <a href="">Log in</a></div>
