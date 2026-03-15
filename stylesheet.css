@@ -164,6 +164,22 @@ label {
   display: block;
 }
 
+input {
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(61, 121, 138);
+  box-shadow: 2px 2px 7px rgba(33, 67, 76);
+}
+
+input:user-invalid {
+  outline: none;
+  border: 2px solid rgb(204, 8, 1);
+  box-shadow: 0px 0px;
+}
+
 .btn {
   background-color: rgb(48, 95, 62);
   color: white;
@@ -172,6 +188,11 @@ label {
   border-radius: 10px;
   margin: 50px 0 0 32px;
   box-shadow: 2px 2px 7px grey;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0px 0px;
 }
 
 .login {
