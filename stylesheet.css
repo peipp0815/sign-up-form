@@ -72,21 +72,18 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
 .container {
+  margin: 0 auto;
+  min-width: 1000px;
   max-width: 1300px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   box-shadow: 2px 0px 10px grey;
 }
 
 .background-image-container {
   width: 400px;
-  height: 100%;
+  height: max(100vh, calc(350px + 350px + 100px)); /* about + form + login */
   background-image: url(img/rickshaw.jpg);
   background-position: right;
   background-repeat: no-repeat;
@@ -120,6 +117,7 @@ body {
 
 .form-container {
   background-color: rgb(243, 242, 239);
+  flex-grow: 1;
 }
 
 .about {
@@ -137,12 +135,15 @@ body {
   font-weight: bold;
 }
 
+.form {
+  height: 350px;
+}
+
 .main-input {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 0px 10px grey;
   padding: 16px 75px;
-  height: 275px;
   background-color: white;
 }
 
@@ -196,7 +197,8 @@ input:user-invalid {
 }
 
 .login {
-  margin: 32px 0 0 32px;
+  padding: 32px 0 32px 32px;
+  height: 100px;
 }
 
 .login a {
